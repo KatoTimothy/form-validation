@@ -1,0 +1,101 @@
+/*uiversal box model fix*/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+/*clear fix*/
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+body {
+	font-family: "acumin pro";
+	background: #f8f8fa;
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+	background: #e5e6eb;
+	padding: 10px 20px;
+}
+
+.form-container {
+	width: 60%;
+	display: block;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+/*Form styles*/
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+	border-radius: 3px;
+	border: 1px solid gray;
+	padding: 5px 15px;
+	width: 300px;
+	outline: none;
+}
+
+/*input styles*/
+.input-label {
+	float: left;
+	width: 39%;
+	margin-right: 8px;
+	/*	text-align: right;*/
+}
+
+.form-group {
+	margin: 5px 0;
+}
+
+textarea {
+	width: 300px;
+	height: 100px;
+	resize: none;
+	border-radius: 3px;
+	padding: 10px;
+	outline: none;
+	font-family: "acumin pro";
+	border: .5px solid gray;
+}
+
+.btn {
+	font-family: "acumin pro";
+	display: block;
+	width: 75px;
+	margin: auto;
+	padding: 8px 2px;
+	border: none;
+	border-radius: 5px;
+	background: darkgray;
+	color: white;
+	outline: none;
+}
+
+.btn:hover {
+	background: gray;
+}
+
+.require {
+	display: none;
+	color: red;
+	margin-top: .2em;
+	padding-left: .5em;
+	font-size: .9em;
+	/*	width: 90%;*/
+}
+
+.input-group {
+	float: left;
+}

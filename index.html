@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Registration Form - Validation</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div id="container">
+
+		<form class="form-container" id="reg-form" method="post" action="#">
+			<h1>Registration Form</h1>
+			<div class="form-group clearfix">
+				<label for="user-id" class="input-label">User Id:</label>
+				<div class="input-group">
+					<input type="text" name="user_id" id="user-id">
+					<span class="require" id="req-user-id"></span>
+				</div>
+			</div>
+
+			<div class="form-group clearfix">
+				<label for="password" class="input-label">Password:</label>
+				<div class="input-group">
+					<input type="password" name="password" id="password">
+					<span class="require" id="req-pw"></span>
+				</div>
+			</div>
+
+			<div class="form-group clearfix">
+				<label for="user-name" class="input-label">Name:</label>
+				<div class="input-group">
+					<input type="text" name="user_name" id="user-name">
+					<span class="require" id="req-name"></span>
+				</div>
+			</div>
+
+			<div class="form-group clearfix">
+				<label for="address" class="input-label">Address:</label>
+				<div class="input-group">
+					<input type="text" name="address" id="address">
+					<span class="require"></span>
+				</div>
+			</div>
+
+			<div class="form-group clearfix">
+				<label for="country" class="input-label"> Country:</label>
+				<div class="input-group" style="width: 300px">
+					<select name="country" id="country" class="input-label">
+						<option value="UG">Uganda</option>
+						<option value="KY">Kenya</option>
+						<option value="RW">Rwanda</option>
+						<option value="SN">Sudan</option>
+						<option value="" selected>-select-</option>
+						<option value="TZ">Tanzania</option>
+					</select>
+					<span class="require" id="req-country"></span>
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<label for="zip" class="input-label">ZIP Code:</label>
+				<div class="input-group">
+					<input type="text" name="zip" id="zip">
+					<span class="require" id="req-zip"></span>
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<label for="email" class="input-label">Email:</label>
+				<div class="input-group">
+					<input type="text" id="email" name="email">
+					<span class="require" id="req-email"></span>
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<label class="input-label">Sex:</label>
+				<div class="input-group">
+					<input type="radio" name="gender" id="male" value="m">
+					<label for="male">Male</label>
+					<span class="require"></span>
+
+					<input type="radio" name="gender" id="female" value="f">
+					<label for="female">Female</label>
+					<span class="require"></span>
+				</div>
+			</div>
+
+			<div class="form-group clearfix">
+				<label class="input-label">Language: </label>
+				<div class="input-group">
+					<input type="checkbox" name="language" id="eng" value="eng" checked>
+					<label for="eng">English</label>
+					<span class="require"></span>
+
+					<input type="checkbox" name="language" id="no-eng" value="no_eng">
+					<label for="no-eng">Non-English</label>
+					<span class="require"></span>
+				</div>
+			</div>
+			<div class="form-group clearfix">
+				<label for="About" class="input-label" style="float: left">About: </label>
+
+				<textarea name="comments" id="about">
+					</textarea>
+			</div>
+			<div class="">
+				<button type="submit" class="btn" id="submit-button">Submit</button>
+			</div>
+		</form>
+	</div>
+	<!--container-->
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
